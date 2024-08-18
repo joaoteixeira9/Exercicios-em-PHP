@@ -4,4 +4,4 @@
 
 <h2>Sobre</h2>
 
-<p>Sou iniciante em PHP e criei este repositório para praticar e melhorar minhas habilidades. Os exercícios aqui cobrem desde conceitos básicos até tópicos mais avançados, permitindo um aprendizado progressivo.</p>
+<p>Sou iniciante em PHP e criei este repositório para praticar e melhorar minhas habilidades. Os exercícios aqui cobrem os conceitos básicos.</p>
