@@ -1,0 +1,51 @@
+EXCEÇÕES
+
+O que são excções ?
+ -São eventos que alteram o fluxo normal de um script durante uma execução de um programa.
+ -Forma de lidar com erros no seu código.
+
+ -A classe Exception do PHP é a base para todas as exceções de usuários. 
+  As exceções podem ser usadas tanto nos paradigmas Orientado a Objetos / Procedural.
+
+ -Exceções são semelhantes a erros, porém, tratam-se de tipos de problemas distintos.
+  Erro é algo inesperado e gerado pelo próprio PHP e Exceção está mais relacionada com violação de regras de negócio, ou seja, quando um requisito de software não é atendido.
+
+**EXEMPLO**
+Quando espera um valor inteiro e o usuário coloca um valor string ou float,
+Então, uma exceção é lançada falando que o argumento não é do tipo esperado(*InvalidArgumentException*)
+
+ -Exceções também podem ser lançadas por funções e classes definidas pelo usuário.
+  E ao criar nossa própria exceção podemos manipular essa interrupção de fluxo de uma maneira que contribua com a usabilidade do sistema.
+  Exceções são lançadas pelo THROW.
+
+  THROW == Palavra reservada, "LANÇAR", lança uma exceção.
+  TRY == Palavra reservada, "TENTAR", contém código que pode causar um erro.
+  CATCH == Palavra reservada, "PEGAR", captura um erro e pode armazenar em uma var, pode exibir uma mensagem de erro ao usuáerio.
+
+**EXEMPLO**
+
+<?php
+
+function dividir($dividendo, $divisor) {
+    if ($divisor == 0) {
+        throw new Exception("Erro: Divisão por zero.");
+    }
+    return $dividendo / $divisor;
+}
+
+try {
+    echo dividir(10, 0);
+} catch (Exception $e) {
+    echo "Exceção capturada: " . $e->getMessage();
+}
+
+?>
+
+throw new Exception("mensagem"): Esta linha lança uma nova exceção (Exception) com uma mensagem de erro personalizada.
+
+try { ... }: O código que pode lançar uma exceção é colocado dentro do bloco try.
+
+catch (Exception $e) { ... }: Se uma exceção for lançada, o bloco catch a captura, e você pode tratar o erro conforme necessário. 
+
+Neste caso, ele imprime a mensagem da exceção.
+Esse padrão é útil para gerenciar erros e garantir que seu código lide com problemas de maneira mais controlada e elegante.

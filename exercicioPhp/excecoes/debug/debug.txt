@@ -1,0 +1,51 @@
+DEBUG
+
+	O termo “Debug”, também conhecido como debugging ou depuração, é o processo de encontrar e remover os bugs(erros) no código-fonte de uma aplicação.
+Bugs normalmente são causados por erros de sintaxe ou de lógica de programação.
+
+	Alguns dos principais níveis de erro em PHP são: Warning, Notice, Parse error e Fatal error.
+
+		-Warnings e notices não interrompem a execução do script.
+
+		-Warning Error é um alerta que indica a existência de problemas pequenos que podem se transformar em problemas maiores
+
+		-Notice Error é um aviso de que algo está errado
+
+	No entanto, erros do tipo Parse e Fatal são erros mais críticos e interrompem a execução do sistema.
+
+		-Parse Error são erros causados por falhas na sintaxe do código.
+
+		-Fatal Error são comuns na tentativa de usar funções ou classes não definidas.
+
+	Para que os erros sejam exibidos, as seguintes opções devem ser verificadas no php.ini:
+
+		display_errors: é a propriedade que determina se os erros poderão ser exibidos.
+	-display_errors: ON
+
+		error_reporting: é a função que permite definir se o erro e quais de suas variantes serão ou não exibidas. 
+	-error_reporting: E_ALL
+
+**BOAS PRATICAS**
+
+	Utilizar algumas técnicas e boas práticas podem evitar ou diminuir o surgimento de bugs:
+
+		*Code reviewing 
+		*Usar corretamente design patterns
+		*Manter o código limpo
+		*Princípios de SOLID
+		*Bons comentários
+		*Uso de TDD
+PROCESSO:
+
+	Como é realizado o processo de Debug:
+		-Reprodução: seguir as etapas, condições, etc.
+		-Diagnóstico: analisar prioridades,riscos, etc
+		-Correção: aplicar a correção adequada ao erro. 
+		-Reflexão: criar medidas preventivas para evitar que o mesmo erro se repita em outros casos.
+
+	Principais técnicas utilizadas para realizar o debugging de um código: 
+		-Tracing(prints): echo, var_dump()
+		-Tentativa/erro: realizar testes específicos
+		-Reverter o código: voltar até o ponto do erro
+		-Isolar o problema: Comentar trechos do código
+		-Uso de debugger:  XDebug

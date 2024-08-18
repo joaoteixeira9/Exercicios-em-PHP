@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha a operação com um número!</title>
+</head>
+
+<body>
+    <form action="data.php" method="post">
+
+        <label for="numero">Número:</label>
+        <input type="number" id="numero" name="numero"><br>
+
+        <fieldset><legend>Operação</legend>
+            <input type="radio" id="oper1" name="oper" value="1" checked>
+            <label for="oper">Dobro</label><br>
+            <input type="radio" id="oper2" name="oper" value="2">
+            <label for="oper">Raiz Quadrada</label><br>
+            <input type="radio" id="oper3" name="oper" value="3">
+            <label for="oper">Cubo</label><br>
+            <button type="submit">Enviar</button>
+        </fieldset>
+
+    </form>
+    
+</body>
+
+</html>
